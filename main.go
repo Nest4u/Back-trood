@@ -19,14 +19,13 @@ import (
 // @BasePath /
 
 func main() {
-	// Инициализация базы данных и обработчиков
+	
 	db.InitDatabase()
 	handlers.InitProjects()
 
-	// Создание нового роутера
 	r := gin.Default()
 
-	// Настройка CORS
+	
 	r.Use(cors.New(cors.Config{
 		AllowOrigins:     []string{"https://front-trood.vercel.app"}, // Укажите домен фронтенда
 		AllowMethods:     []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
@@ -35,10 +34,10 @@ func main() {
 		AllowCredentials: true,
 	}))
 
-	// Swagger
+	
 	r.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
 
-	// Маршруты API
+	
 	r.GET("/projects", handlers.GetProjects)
 	r.GET("/projects/:id", handlers.GetProjectByID)
 	r.POST("/projects", handlers.CreateProject)
@@ -50,7 +49,7 @@ func main() {
 	r.PUT("/vacancies/:id", handlers.EditVacancy)
 	r.DELETE("/vacancies/:id", handlers.DeleteVacancy)
 
-	// Запуск сервера
+	
 	port := "8080"
 	log.Println("Server running on http://localhost:" + port)
 
