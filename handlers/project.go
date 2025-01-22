@@ -24,21 +24,21 @@ func InitProjects() {
 		ID:          1,
 		Name:        "Project Alpha",
 		Description: "A cutting-edge AI project",
-		Deadline:    "31.12.2025",
+		Deadline:    "2025.12.31",
 		Experience:  "5+ years",
 	}
 	projects[2] = models.Project{
 		ID:          2,
 		Name:        "Project Beta",
 		Description: "Next-gen cloud platform",
-		Deadline:    "30.06.2025",
+		Deadline:    "2025.06.30",
 		Experience:  "3+ years",
 	}
 	projects[3] = models.Project{
 		ID:          3,
 		Name:        "Project Gamma",
 		Description: "Blockchain-based fintech solution",
-		Deadline:    "15.09.2025",
+		Deadline:    "2025.09.15",
 		Experience:  "4+ years",
 	}
 
