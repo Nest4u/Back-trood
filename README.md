@@ -20,7 +20,8 @@ cd trood-front-hackathon/backend
 ```bash
 go mod tidy
 ```
-3. Run the Application:
+3. Commit production cors config in main.go
+4. Run the Application:
 
 ```bash
 go run main.go
