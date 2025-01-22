@@ -33,7 +33,7 @@ func main() {
    //     AllowCredentials: true,
    // }))
 	 r.Use(cors.New(cors.Config{
-	 	AllowOrigins:     []string{"https://front-trood.vercel.app"}, 
+	 	AllowOrigins:     []string{"https://front-trood-app.vercel.app"}, 
 	 	AllowMethods:     []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
 		AllowHeaders:     []string{"Origin", "Content-Type", "Authorization"},
 	ExposeHeaders:    []string{"Content-Length"},
