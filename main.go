@@ -27,7 +27,7 @@ func main() {
 
 	
 	r.Use(cors.New(cors.Config{
-		AllowOrigins:     []string{"https://front-trood.vercel.app"}, // Укажите домен фронтенда
+		AllowOrigins:     []string{"https://front-trood.vercel.app"}, 
 		AllowMethods:     []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
 		AllowHeaders:     []string{"Origin", "Content-Type", "Authorization"},
 		ExposeHeaders:    []string{"Content-Length"},
